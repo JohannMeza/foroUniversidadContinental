@@ -1,0 +1,184 @@
+/* HEADER */
+.header__content {
+  width: 95%;
+  margin: 0 auto 0;
+}
+
+/* Header superior */
+.header__logo {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background: #161B22;
+  border-bottom: .5px solid #ccc;
+  transition: background .5s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* text-align: center; */
+}
+  .header__logo img {
+    width: 150px;
+  }
+
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Btn del mode */
+.header__mode {
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+  .header__mode-circle {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.header-mode {
+  width: 45px;
+  height: 18px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.header-mode:after {
+  content: attr(data-icon);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(82, 82, 82);
+}
+
+/* Botones */
+.header__btn {
+  display: none;
+  gap: 15px;
+}
+
+.header__btn-menu {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 30px;
+}
+
+  .btn__log,
+  .btn__subs {
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn__log {
+    color: #fff;
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    transition: color .5s ease,
+        background .5s ease;
+  }
+
+  .btn__log:hover {
+    color: #161B22;
+    background: #fff;
+  }
+
+  .btn__subs {
+    background: #fff;
+    color: #161B22;
+    width: 120px;
+    border-radius: 50px;
+  }
+
+
+/* Nav */
+.header__nav {
+  width: 100%;
+  margin-top: 5.5rem;
+  border-top: 1px solid #000; 
+  border-bottom: 1px solid #000; 
+  padding: 20px 0;
+  position: fixed;
+  z-index: 10;
+  top: -100%;
+  left: 0;
+  background: #fff;
+  transition: top 1s ease-in-out;
+}
+  .header__nav-active {
+    top: 0;
+  }
+
+  .menu__link {
+    font-family: 'Abel', sans-serif;
+  }
+  
+  @media screen and (max-width: 850px) {
+    .nav__menu {
+      padding: 0 15px;
+    }
+    
+    .menu__link {
+      display: inline-block;
+      margin: 10px 0;
+    }
+
+  }
+
+  @media screen and (min-width: 850px) {
+    /* Menu */
+    .header__nav {
+      display: block;
+      position: relative;
+      background: none !important;
+    }
+
+    .nav__menu {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Main */
+    .main {
+      margin-top: 25px;
+    }
+  
+    .header__logo {
+      padding: 15px 30px;
+    }
+
+    /* Header btn */
+    .header__btn {
+      display: flex;
+    }
+
+    .header__btn-menu { 
+      display: none;
+    }
+  }

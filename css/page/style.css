@@ -1,0 +1,9 @@
+/* Estilo base */
+@import url("../base/base.css");
+
+/* Estilo block  */
+@import url("../block/header.css");
+
+/* Estilo de la pagina  */
+@import url("./mod/main.css");
+@import url("./mod/aside.css");

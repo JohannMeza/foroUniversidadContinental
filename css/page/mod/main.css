@@ -1,0 +1,39 @@
+/* MAIN */
+.main {
+  width: 95%;
+  max-width: 1180px;
+  margin: 0 auto 0;
+  display: grid;
+  grid-template-columns: 1fr 40%;
+  grid-gap: 25px;
+  margin-top: 7rem;
+  font-family: 'Almarai', sans-serif; 
+}
+  .main__sections {
+    max-width: 680px;
+    margin: 0 auto 0;
+  }
+
+  .main__time {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #6C6C6C;
+  }
+
+@media screen and (min-width: 850px) {
+  .main {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .main__aside {
+    display: none;
+  }
+}
+

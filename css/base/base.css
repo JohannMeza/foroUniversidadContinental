@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Almarai:wght@300;400;700;800&display=swap');
+/* font-family: 'Abel', sans-serif;
+font-family: 'Almarai', sans-serif; */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
+
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 50px;
+
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 45px;
+
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+
+}
+
+p {
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #BAC0C9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6D7888;
+  border-radius: 15px;
+}
